@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
-    
+    //the email text field
     let emailTextField: UITextField = {
         let tf = UITextField()
         tf.placeholder = "Email"
