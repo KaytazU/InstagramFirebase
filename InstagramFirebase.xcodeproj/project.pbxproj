@@ -11,12 +11,13 @@
 		2E1088BA20AD56C100368783 /* UserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1088B920AD56C100368783 /* UserProfileController.swift */; };
 		2E1088BD20AD691F00368783 /* UserProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1088BC20AD691F00368783 /* UserProfileHeader.swift */; };
 		2E5052EE20A9C9CA006126AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5052ED20A9C9CA006126AA /* AppDelegate.swift */; };
-		2E5052F020A9C9CA006126AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5052EF20A9C9CA006126AA /* ViewController.swift */; };
+		2E5052F020A9C9CA006126AA /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5052EF20A9C9CA006126AA /* SignUpController.swift */; };
 		2E5052F320A9C9CA006126AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E5052F120A9C9CA006126AA /* Main.storyboard */; };
 		2E5052F520A9C9CC006126AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E5052F420A9C9CC006126AA /* Assets.xcassets */; };
 		2E5052F820A9C9CC006126AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E5052F620A9C9CC006126AA /* LaunchScreen.storyboard */; };
 		2E50530120A9F343006126AA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E50530020A9F343006126AA /* Extensions.swift */; };
 		2E60AE7520AB18E500C15C94 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E60AE7420AB18E500C15C94 /* GoogleService-Info.plist */; };
+		2EBF868720B01F0400EA7CD0 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBF868620B01F0400EA7CD0 /* LoginController.swift */; };
 		FFA7C3699025EF8AE16FB20F /* Pods_InstagramFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F358BA0957AC9506A6E8E6 /* Pods_InstagramFirebase.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,13 +28,14 @@
 		2E1088BC20AD691F00368783 /* UserProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileHeader.swift; sourceTree = "<group>"; };
 		2E5052EA20A9C9CA006126AA /* InstagramFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E5052ED20A9C9CA006126AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2E5052EF20A9C9CA006126AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2E5052EF20A9C9CA006126AA /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		2E5052F220A9C9CA006126AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2E5052F420A9C9CC006126AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E5052F720A9C9CC006126AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E5052F920A9C9CC006126AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E50530020A9F343006126AA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		2E60AE7420AB18E500C15C94 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2EBF868620B01F0400EA7CD0 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		54EAAFF284222F55CDD51567 /* Pods-InstagramFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramFirebase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstagramFirebase/Pods-InstagramFirebase.debug.xcconfig"; sourceTree = "<group>"; };
 		67F358BA0957AC9506A6E8E6 /* Pods_InstagramFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstagramFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -88,11 +90,11 @@
 		2E5052EC20A9C9CA006126AA /* InstagramFirebase */ = {
 			isa = PBXGroup;
 			children = (
+				2EBF868520B01EDE00EA7CD0 /* Login */,
 				2E1088BB20AD68FF00368783 /* UserProfile */,
 				2E5052FF20A9F326006126AA /* Utils */,
 				2E5052ED20A9C9CA006126AA /* AppDelegate.swift */,
 				2E1088B720AD552B00368783 /* MainTabBarController.swift */,
-				2E5052EF20A9C9CA006126AA /* ViewController.swift */,
 				2E5052F120A9C9CA006126AA /* Main.storyboard */,
 				2E5052F420A9C9CC006126AA /* Assets.xcassets */,
 				2E5052F620A9C9CC006126AA /* LaunchScreen.storyboard */,
@@ -108,6 +110,15 @@
 				2E50530020A9F343006126AA /* Extensions.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		2EBF868520B01EDE00EA7CD0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2EBF868620B01F0400EA7CD0 /* LoginController.swift */,
+				2E5052EF20A9C9CA006126AA /* SignUpController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		CFCDD6E364AD62CC65040E71 /* Pods */ = {
@@ -238,12 +249,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E5052F020A9C9CA006126AA /* ViewController.swift in Sources */,
+				2E5052F020A9C9CA006126AA /* SignUpController.swift in Sources */,
 				2E50530120A9F343006126AA /* Extensions.swift in Sources */,
 				2E1088B820AD552B00368783 /* MainTabBarController.swift in Sources */,
 				2E1088BD20AD691F00368783 /* UserProfileHeader.swift in Sources */,
 				2E1088BA20AD56C100368783 /* UserProfileController.swift in Sources */,
 				2E5052EE20A9C9CA006126AA /* AppDelegate.swift in Sources */,
+				2EBF868720B01F0400EA7CD0 /* LoginController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

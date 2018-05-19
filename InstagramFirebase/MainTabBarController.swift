@@ -7,10 +7,24 @@
 //
 
 import UIKit
-
+import Firebase
 class MainTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print("Loading Main tab bar controller")
+        
+        if Auth.auth().currentUser == nil {
+            //show if not logged in
+            //This lets us wait until the main tab bar controller is inside of the UI
+            DispatchQueue.main.async {
+                let loginController = LoginController()
+                let navController = UINavigationController(rootViewController: loginController)
+                self.present(navController, animated: true,completion: nil)
+            }
+            
+            return
+        }
         
         let layout = UICollectionViewFlowLayout()
         let userProfileController = UserProfileController(collectionViewLayout: layout)
