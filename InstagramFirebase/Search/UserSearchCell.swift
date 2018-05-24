@@ -10,6 +10,16 @@ import UIKit
 
 class UserSearchCell: UICollectionViewCell {
     
+    var user: User? {
+        didSet{
+            usernameLabel.text = user?.username
+            
+            guard let profileImageUrl = user?.profileImageUrl else {return}
+            
+            profileImageView.loadImage(urlString: profileImageUrl)
+        }
+    }
+    
     let profileImageView: CustomImageView = {
         let iv = CustomImageView()
         iv.backgroundColor = .red
@@ -29,7 +39,7 @@ class UserSearchCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-                
+        
         addSubview(profileImageView)
         addSubview(usernameLabel)
         
