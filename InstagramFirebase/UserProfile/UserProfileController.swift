@@ -28,9 +28,7 @@ class UserProfileController: UICollectionViewController, UICollectionViewDelegat
         collectionView?.register(UserProfilePhotoCell.self, forCellWithReuseIdentifier: cellId)
         
         setupLogOutButton()
-        
-//        fetchPosts()
-        
+                
         fetchOrderedPosts()
     }
     
@@ -45,8 +43,12 @@ class UserProfileController: UICollectionViewController, UICollectionViewDelegat
             
             guard let dictionary = snapshot.value as? [String: Any] else { return }
             
-            let post = Post(dictionary: dictionary)
-            self.posts.append(post)
+            guard let user = self.user else {return}
+            
+            let post = Post(user: user, dictionary: dictionary)
+            
+            self.posts.insert(post, at:0)
+//            self.posts.append(post)
             
             self.collectionView?.reloadData()
             
@@ -147,17 +149,6 @@ class UserProfileController: UICollectionViewController, UICollectionViewDelegat
     }
 }
 
-struct User{
-    
-    let username: String
-    let profileImageUrl: String
-    
-    init(dictionary: [String: Any]) {
-        self.username = dictionary["username"] as? String ?? ""
-        self.profileImageUrl = dictionary["profileImageUrl"] as? String ?? ""
-    }
-    
-}
 
 
 
