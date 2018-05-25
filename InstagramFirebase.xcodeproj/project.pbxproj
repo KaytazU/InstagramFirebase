@@ -28,6 +28,7 @@
 		2E5052F820A9C9CC006126AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E5052F620A9C9CC006126AA /* LaunchScreen.storyboard */; };
 		2E50530120A9F343006126AA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E50530020A9F343006126AA /* Extensions.swift */; };
 		2E60AE7520AB18E500C15C94 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E60AE7420AB18E500C15C94 /* GoogleService-Info.plist */; };
+		2E78F83B20B85583000B2690 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E78F83A20B85583000B2690 /* CameraController.swift */; };
 		2EBF868720B01F0400EA7CD0 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBF868620B01F0400EA7CD0 /* LoginController.swift */; };
 		2EEF562320B2F447001E4FC8 /* PhotoSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEF562220B2F447001E4FC8 /* PhotoSelectorController.swift */; };
 		2EEF562520B344DF001E4FC8 /* PhotoSelectorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEF562420B344DF001E4FC8 /* PhotoSelectorCell.swift */; };
@@ -59,6 +60,7 @@
 		2E5052F920A9C9CC006126AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E50530020A9F343006126AA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		2E60AE7420AB18E500C15C94 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2E78F83A20B85583000B2690 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
 		2EBF868620B01F0400EA7CD0 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		2EEF562220B2F447001E4FC8 /* PhotoSelectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorController.swift; sourceTree = "<group>"; };
 		2EEF562420B344DF001E4FC8 /* PhotoSelectorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorCell.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 		2E5052EC20A9C9CA006126AA /* InstagramFirebase */ = {
 			isa = PBXGroup;
 			children = (
+				2E78F83920B8555F000B2690 /* Camera */,
 				2E40419A20B6BD9600DC6ED7 /* Search */,
 				2E40419120B5D88C00DC6ED7 /* Home */,
 				2E40418A20B5AB7800DC6ED7 /* Models */,
@@ -170,6 +173,14 @@
 				2E40419820B6BC9300DC6ED7 /* FirebaseUtils.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		2E78F83920B8555F000B2690 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				2E78F83A20B85583000B2690 /* CameraController.swift */,
+			);
+			path = Camera;
 			sourceTree = "<group>";
 		};
 		2EBF868520B01EDE00EA7CD0 /* Login */ = {
@@ -329,6 +340,7 @@
 				2E40418C20B5ABA500DC6ED7 /* Post.swift in Sources */,
 				2E40419C20B6BDAE00DC6ED7 /* UserSearchController.swift in Sources */,
 				2E50530120A9F343006126AA /* Extensions.swift in Sources */,
+				2E78F83B20B85583000B2690 /* CameraController.swift in Sources */,
 				2E40418E20B5B32500DC6ED7 /* UserProfilePhotoCell.swift in Sources */,
 				2E40419720B6A4A200DC6ED7 /* User.swift in Sources */,
 				2E1088B820AD552B00368783 /* MainTabBarController.swift in Sources */,
