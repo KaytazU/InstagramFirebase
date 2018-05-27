@@ -58,7 +58,7 @@ class SharePhotoController: UIViewController {
     
     
     @objc func handleShare(){
-        guard let caption = textView.text, caption.characters.count > 0 else {return}
+        guard let caption = textView.text, caption.count > 0 else {return}
 //        print("Sharing photo")
         guard let image = selectedImage else {return}
         guard let uploadData = UIImageJPEGRepresentation(image, 0.5) else {return}
@@ -68,7 +68,7 @@ class SharePhotoController: UIViewController {
         let filename = NSUUID().uuidString
         Storage.storage().reference().child("posts").child(filename).putData(uploadData, metadata: nil) { (metadata, err) in
             
-            if let err = err{
+            if let _ = err{
                 self.navigationItem.rightBarButtonItem?.isEnabled = true
                 print("Failed to upload image")
                 return
@@ -97,7 +97,7 @@ class SharePhotoController: UIViewController {
         let values = ["imageUrl": imageUrl, "caption": caption, "imageWidth": postImage.size.width, "imageHeight": postImage.size.height, "creationDate": Date().timeIntervalSince1970] as [String : Any]
         
         ref.updateChildValues(values) { (err, ref) in
-            if let err = err{
+            if let _ = err{
                 self.navigationItem.rightBarButtonItem?.isEnabled = true
                 print("Failed to save post to DB")
                 return
