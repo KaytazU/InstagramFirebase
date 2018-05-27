@@ -28,6 +28,8 @@
 		2E5052F820A9C9CC006126AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E5052F620A9C9CC006126AA /* LaunchScreen.storyboard */; };
 		2E50530120A9F343006126AA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E50530020A9F343006126AA /* Extensions.swift */; };
 		2E60AE7520AB18E500C15C94 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E60AE7420AB18E500C15C94 /* GoogleService-Info.plist */; };
+		2E67271820BA1C7E00F8717E /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E67271720BA1C7E00F8717E /* CommentCell.swift */; };
+		2E67271A20BA28F200F8717E /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E67271920BA28F200F8717E /* Comment.swift */; };
 		2E78F83B20B85583000B2690 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E78F83A20B85583000B2690 /* CameraController.swift */; };
 		2EBF868720B01F0400EA7CD0 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBF868620B01F0400EA7CD0 /* LoginController.swift */; };
 		2EEF562320B2F447001E4FC8 /* PhotoSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEF562220B2F447001E4FC8 /* PhotoSelectorController.swift */; };
@@ -64,6 +66,8 @@
 		2E5052F920A9C9CC006126AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E50530020A9F343006126AA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		2E60AE7420AB18E500C15C94 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2E67271720BA1C7E00F8717E /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		2E67271920BA28F200F8717E /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		2E78F83A20B85583000B2690 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
 		2EBF868620B01F0400EA7CD0 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		2EEF562220B2F447001E4FC8 /* PhotoSelectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorController.swift; sourceTree = "<group>"; };
@@ -111,6 +115,7 @@
 			children = (
 				2E40418B20B5ABA500DC6ED7 /* Post.swift */,
 				2E40419620B6A4A200DC6ED7 /* User.swift */,
+				2E67271920BA28F200F8717E /* Comment.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 				2E40419220B5D8A700DC6ED7 /* HomeController.swift */,
 				2E40419420B5DF6600DC6ED7 /* HomePostCell.swift */,
 				2EF6C20B20B9CA34003AC33D /* CommentsController.swift */,
+				2E67271720BA1C7E00F8717E /* CommentCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -356,6 +362,7 @@
 				2E78F83B20B85583000B2690 /* CameraController.swift in Sources */,
 				2E40418E20B5B32500DC6ED7 /* UserProfilePhotoCell.swift in Sources */,
 				2E40419720B6A4A200DC6ED7 /* User.swift in Sources */,
+				2E67271820BA1C7E00F8717E /* CommentCell.swift in Sources */,
 				2E1088B820AD552B00368783 /* MainTabBarController.swift in Sources */,
 				2E1088BD20AD691F00368783 /* UserProfileHeader.swift in Sources */,
 				2EF6C20A20B9BDA3003AC33D /* CustomAnimationDismisser.swift in Sources */,
@@ -367,6 +374,7 @@
 				2E161FD220B3DCDB00C2E2EE /* PhotoSelectorHeader.swift in Sources */,
 				2EF6C20C20B9CA34003AC33D /* CommentsController.swift in Sources */,
 				2EEF562320B2F447001E4FC8 /* PhotoSelectorController.swift in Sources */,
+				2E67271A20BA28F200F8717E /* Comment.swift in Sources */,
 				2E40419320B5D8A700DC6ED7 /* HomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
